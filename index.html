@@ -23,13 +23,13 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container">
-        <nav>
+      <div class="container header-container">
+        <nav class="site-nav">
           <a href="./index.html" class="logo link"
             >Web<span class="header-logo">Studio</span></a
           >
           <ul class="site-nav-list list">
-            <li>
+            <li class="site-nav-item">
               <a href="./index.html" class="link current">Студия</a>
             </li>
             <li class="site-nav-item">
@@ -41,12 +41,12 @@
           </ul>
         </nav>
         <ul class="header-contacts-list list">
-          <li>
+          <li class="header-contacts-item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="header-contacts-item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -74,6 +74,7 @@
                 формированию позиции.
               </p>
             </li>
+
             <li class="features-item">
               <h3 class="features-item-title title">Пунктуальность</h3>
               <p class="features-item-text">
@@ -81,6 +82,7 @@
                 кадров влечет за собой.
               </p>
             </li>
+
             <li class="features-item">
               <h3 class="features-item-title title">Планирование</h3>
               <p class="features-item-text">
@@ -88,6 +90,7 @@
                 степени обуславливает.
               </p>
             </li>
+
             <li class="features-item">
               <h3 class="features-item-title title">Современные технологии</h3>
               <p class="features-item-text">
@@ -111,6 +114,7 @@
                 height="294"
               />
             </li>
+
             <li class="services-item">
               <img
                 src="./images/box-2.jpg"
@@ -119,6 +123,7 @@
                 height="294"
               />
             </li>
+
             <li class="services-item">
               <img
                 src="./images/box-3.jpg"
@@ -136,44 +141,60 @@
           <h2 class="team-title title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                src="./images/product-designer-photo.jpg"
-                alt="Фотография дизайнера продукта"
-                width="260"
-                height="270"
-              />
-              <h3 class="team-item-title title">Игорь Демьяненко</h3>
-              <p lang="en" class="team-item-text">Product Designer</p>
+              <div class="team-img-thumb">
+                <img
+                  src="./images/product-designer-photo.jpg"
+                  alt="Фотография дизайнера продукта"
+                  width="270"
+                  height="260"
+                />
+              </div>
+              <div class="team-item-content">
+                <h3 class="team-item-title title">Игорь Демьяненко</h3>
+                <p lang="en" class="team-item-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/frontend-developer-photo.jpg"
-                alt="Фотография фронтэнд разработчика"
-                width="260"
-                height="270"
-              />
-              <h3 class="team-item-title title">Ольга Репина</h3>
-              <p lang="en" class="team-item-text">Frontend Developer</p>
+              <div class="team-img-thumb">
+                <img
+                  src="./images/frontend-developer-photo.jpg"
+                  alt="Фотография фронтэнд разработчика"
+                  width="270"
+                  height="260"
+                />
+              </div>
+              <div class="team-item-content">
+                <h3 class="team-item-title title">Ольга Репина</h3>
+                <p lang="en" class="team-item-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/marketing-photo.jpg"
-                alt="Фотография маркетолога"
-                width="260"
-                height="270"
-              />
-              <h3 class="team-item-title title">Николай Тарасов</h3>
-              <p lang="en" class="team-item-text">Marketing</p>
+              <div class="team-img-thumb">
+                <img
+                  src="./images/marketing-photo.jpg"
+                  alt="Фотография маркетолога"
+                  width="270"
+                  height="260"
+                />
+              </div>
+              <div class="team-item-content">
+                <h3 class="team-item-title title">Николай Тарасов</h3>
+                <p lang="en" class="team-item-text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/UI-Designer-photo.jpg"
-                alt="Фотография UI-дизайнера"
-                width="260"
-                height="270"
-              />
-              <h3 class="team-item-title title">Михаил Ермаков</h3>
-              <p lang="en" class="team-item-text">UI Designer</p>
+              <div class="team-img-thumb">
+                <img
+                  src="./images/UI-Designer-photo.jpg"
+                  alt="Фотография UI-дизайнера"
+                  width="270"
+                  height="260"
+                />
+              </div>
+              <div class="team-item-content">
+                <h3 class="team-item-title title">Михаил Ермаков</h3>
+                <p lang="en" class="team-item-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -182,8 +203,8 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo link"
-          >Web<span class="footer-logo">Studio</span></a
+        <a href="./index.html" class="logo link footer-logo"
+          >Web<span class="footer-logo-accent">Studio</span></a
         >
         <address class="address">
           <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
