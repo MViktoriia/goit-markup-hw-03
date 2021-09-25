@@ -88,13 +88,18 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Header */
 
 .header {
   background-color: var(--primary-light-background-color);
-  padding-top: 25px;
+  border-bottom: 1px solid var(--header-line-boder-color);
+  padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid var(--header-line-boder-color);
 }
 
 .header-container {
@@ -161,6 +166,11 @@ img {
   letter-spacing: 0.02em;
 }
 
+.site-nav-list .link, .header-contacts-list .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* Hero */
 
 .hero {
@@ -204,10 +214,7 @@ img {
 
 /* Features */
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+.features
 
 .features-list {
   display: flex;
@@ -260,8 +267,6 @@ img {
 
 .team {
   background-color: var(--secondary-light-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-title {
@@ -280,7 +285,7 @@ img {
 .team-item {
   background: var(--primary-light-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-left: 30px; */
   flex-basis: calc(100% / 4 -30px);
@@ -351,10 +356,7 @@ img {
 
 /* Portfolio */
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+.portfolio
 
 .filter-buttons-list {
   display: flex;
@@ -399,8 +401,7 @@ img {
   margin-left: 30px;
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
-  border: 1px solid var(--card-border-color);
-}
+  }
 
 .portfolio-item-title {
   font-weight: 700;
@@ -420,5 +421,7 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  border: 1px solid var(--card-border-color);
+  border-top: 0;
 }
 
